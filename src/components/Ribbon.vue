@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center">
-    <v-col cols="8" md="4">
+    <v-col cols="10" md="4">
       <div class="banner">
         <div class="line">
           <span>DATA ANALYST</span>

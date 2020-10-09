@@ -2,25 +2,81 @@
   <v-app>
     <Header />
     <v-main class="fill-height" id="line-anim">
-      <HomePage />
+      <v-row
+        align="center"
+        justify="center"
+        style="height: calc(100vh - 64px);"
+        no-gutters
+      >
+        <v-col cols="1">
+          <v-item-group
+            v-model="page"
+            class="ml-12 dot-nav-group"
+            mandatory
+            tag="v-flex"
+          >
+            <v-item
+              v-for="n in nav"
+              :key="n"
+              v-slot:default="{ active, toggle }"
+            >
+              <div class="dot-nav" @click="toggle">
+                <v-btn :input-value="active" icon>
+                  <v-icon color="white">mdi-record</v-icon>
+                </v-btn>
+                <span class="hidden-sm-and-down white--text dot-text">{{
+                  n
+                }}</span>
+              </div>
+            </v-item>
+          </v-item-group>
+        </v-col>
+        <v-col cols="10">
+          <v-window v-model="page" vertical>
+            <v-window-item>
+              <HomePage />
+            </v-window-item>
+            <v-window-item>
+              <SkillsSection />
+            </v-window-item>
+            <v-window-item> </v-window-item>
+          </v-window>
+        </v-col>
+        <v-col cols="1"></v-col>
+      </v-row>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HomePage from "./components/HomePage";
+import HomePage from "@/components/HomePage";
 import Header from "@/components/Header";
+import SkillsSection from "@/components/Skills/SkillsSection";
 
 export default {
   name: "App",
 
   components: {
     HomePage,
-    Header
+    Header,
+    SkillsSection
+  },
+
+  computed: {
+    page: {
+      // getter
+      get: function() {
+        return this.$store.state.pageIndex;
+      },
+      // setter
+      set: function(val) {
+        this.$store.commit("setpageIndex", val);
+      }
+    }
   },
 
   data: () => ({
-    //
+    nav: ["Home", "Skills", "Education"]
   }),
   mounted: function() {
     let scene, camera, renderer, ribbon;
@@ -146,7 +202,42 @@ export default {
   }
 };
 </script>
+
 <style lang="scss">
+.ml-n124 {
+  margin-left: -124px;
+}
+
+.dot-nav-group {
+  z-index: 2;
+}
+
+.v-btn--active {
+  background-color: rgba($color: white, $alpha: 0.4);
+}
+
+.v-item--active {
+  .dot-text {
+    scale: 1.5;
+    left: 52px;
+  }
+}
+
+.dot-nav {
+  transition: ease-in 0.5s;
+  cursor: pointer;
+  width: 124px;
+  &:hover {
+    .dot-text {
+      left: 52px;
+    }
+  }
+  .dot-text {
+    position: absolute;
+    cursor: pointer;
+  }
+}
+
 .v-main {
   background-color: #212121;
   height: calc(100vh - 64px);

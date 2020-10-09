@@ -7,59 +7,65 @@
     height="120px"
     @click.stop="changetab"
   >
-    <v-col cols="4">
-      <v-card class="mx-auto card-button" elevation="24" href="#tab-about">
-        <div class="left-side">
-          <svg
-            version="1.1"
-            id="svglogo"
-            xmlns:svg="http://www.w3.org/2000/svg"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            viewBox="0 0 1024 1024"
-            xml:space="preserve"
-          >
-            <g id="layer1" inkscape:groupmode="layer" inkscape:label="Katman 1">
-              <ellipse
-                id="path833-5"
-                class="sline"
-                cx="486.9"
-                cy="511"
-                rx="8.3"
-                ry="421.2"
-              />
-              <circle
-                id="path833-9"
-                class="circle"
-                cx="503.5"
-                cy="394"
-                r="251.4"
-              />
-              <ellipse
-                id="path833-5-5-5"
-                class="sline"
-                cx="398.9"
-                cy="512"
-                rx="8.3"
-                ry="422.2"
-              />
+    <v-col cols="4" href="#tab-about">
+      <v-card class="mx-auto card-button" elevation="24">
+        <div class="left-side" v-ripple>
+          <v-row class="i-show" justify="center">
+            <v-icon class="arrow pb-12" color="white">mdi-arrow-down</v-icon>
+          </v-row>
+          <v-row class="icon-row">
+            <svg
+              version="1.1"
+              id="svglogo"
+              xmlns:svg="http://www.w3.org/2000/svg"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 1024 1024"
+              xml:space="preserve"
+            >
+              <g
+                id="layer1"
+                inkscape:groupmode="layer"
+                inkscape:label="Katman 1"
+              >
+                <ellipse
+                  id="path833-5"
+                  class="sline"
+                  cx="486.9"
+                  cy="511"
+                  rx="8.3"
+                  ry="421.2"
+                />
+                <circle
+                  id="path833-9"
+                  class="circle"
+                  cx="503.5"
+                  cy="394"
+                  r="251.4"
+                />
+                <ellipse
+                  id="path833-5-5-5"
+                  class="sline"
+                  cx="398.9"
+                  cy="512"
+                  rx="8.3"
+                  ry="422.2"
+                />
 
-              <ellipse
-                id="path833-5-5-5-5"
-                transform="matrix(0.8781 -0.4785 0.4785 0.8781 -215.4215 278.5)"
-                class="sline"
-                cx="438.8"
-                cy="562"
-                rx="8.3"
-                ry="422.2"
-              />
-            </g>
-          </svg>
-          <v-btn hidden class="arrow i-show" icon>
-            <v-icon color="white">mdi-arrow-right</v-icon>
-          </v-btn>
+                <ellipse
+                  id="path833-5-5-5-5"
+                  transform="matrix(0.8781 -0.4785 0.4785 0.8781 -215.4215 278.5)"
+                  class="sline"
+                  cx="438.8"
+                  cy="562"
+                  rx="8.3"
+                  ry="422.2"
+                />
+              </g>
+            </svg>
+          </v-row>
         </div>
         <div class="right-side">
           <div class="new">Learn More About Me!!</div>
@@ -103,17 +109,21 @@ export default {
 }
 
 .card-button:hover {
-  width: 50%;
-  height: 150px;
+  width: 75%;
+  height: 400px;
+}
+
+.card-button:hover .icon-row {
+  height: 0;
 }
 .card-button:hover .left-side {
-  width: 100%;
   background-color: #bc002d;
+  width: 100%;
 }
 
 .logo-row {
   height: 100px;
-  width: 124px;
+  width: 100%;
 }
 
 #button_img {
@@ -128,12 +138,12 @@ export default {
   border-radius: 24px;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   cursor: pointer;
   transition: 0.3s;
   flex-shrink: 0;
-  flex-direction: row;
+  flex-direction: column-reverse;
 }
 
 .right-side {
@@ -161,7 +171,9 @@ export default {
   font-family: "Roboto", sans-serif;
   margin-left: 20px;
 }
-
+.i-show {
+  display: none;
+}
 .card-button:hover .i-show {
   display: block;
 }

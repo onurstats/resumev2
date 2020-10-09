@@ -4,8 +4,17 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {},
-  modules: {}
+  state: {
+    pageIndex: 0
+  },
+  mutations: {
+    setpageIndex: (state, index) => {
+      state.pageIndex = index;
+    }
+  },
+  getters: {
+    page: state => {
+      return state.pageIndex;
+    }
+  }
 });

@@ -1,13 +1,13 @@
 <template>
   <v-app-bar app color="white" height="64" :extended="isMobile">
-    <template v-if="isMobile" v-slot:extension>
+    <template v-if="isMobile" v-slot:extension style="padding:0">
       <v-tabs v-model="page" centered slider-color="secondary">
         <v-tab>Home</v-tab>
         <v-tab>Skills</v-tab>
         <v-tab>Education</v-tab>
       </v-tabs>
     </template>
-    <v-row justify="center">
+    <v-row justify="center" align="center">
       <v-col cols="12" md="10">
         <v-row class="justify-center justify-md-start">
           <v-img
@@ -44,7 +44,6 @@ export default {
     page: {
       // getter
       get: function() {
-        console.log(this.$store.state.pageIndex);
         return this.$store.state.pageIndex;
       },
       // setter

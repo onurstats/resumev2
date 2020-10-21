@@ -3,7 +3,13 @@
     <v-col cols="12" v-for="part in parts" :key="part.title">
       <v-sheet class="mx-auto" elevation="8">
         <v-card-title>{{ part.title }}</v-card-title>
-        <v-slide-group class="pa-4" show-arrows center-active>
+        <v-slide-group class="pa-4" center-active>
+          <template v-slot:prev>
+            <v-icon large>mdi-chevron-left</v-icon>
+          </template>
+          <template v-slot:next>
+            <v-icon large>mdi-chevron-right</v-icon>
+          </template>
           <v-slide-item
             v-for="item in part.skills"
             :key="item.img"
@@ -35,7 +41,11 @@
     </v-col>
   </v-row>
 </template>
-
+<style>
+.mdi-chevron-left .mdi-chevron-right {
+  font-size: 72px;
+}
+</style>
 <script>
 export default {
   name: "SkillsSection",

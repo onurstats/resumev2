@@ -8,7 +8,7 @@
         style="height: calc(100vh - 64px);"
         no-gutters
       >
-        <v-col cols="1">
+        <v-col cols="1" class="hidden-sm-and-down">
           <v-item-group
             v-model="page"
             class="ml-12 dot-nav-group"
@@ -31,7 +31,7 @@
             </v-item>
           </v-item-group>
         </v-col>
-        <v-col cols="10">
+        <v-col md="10">
           <v-window v-model="page" vertical>
             <v-window-item>
               <HomePage />
@@ -39,10 +39,11 @@
             <v-window-item>
               <SkillsSection />
             </v-window-item>
-            <v-window-item> </v-window-item>
+            <v-window-item>
+              <EducationSection />
+            </v-window-item>
           </v-window>
         </v-col>
-        <v-col cols="1"></v-col>
       </v-row>
     </v-main>
   </v-app>
@@ -52,6 +53,7 @@
 import HomePage from "@/components/HomePage";
 import Header from "@/components/Header";
 import SkillsSection from "@/components/Skills/SkillsSection";
+import EducationSection from "@/components/Education/EducationSection";
 
 export default {
   name: "App",
@@ -59,7 +61,8 @@ export default {
   components: {
     HomePage,
     Header,
-    SkillsSection
+    SkillsSection,
+    EducationSection
   },
 
   computed: {

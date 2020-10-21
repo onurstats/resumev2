@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: "/resumev2/",
   transpileDependencies: ["vuetify"],
   pwa: {
     name: "Onur Yanar Personal Site",

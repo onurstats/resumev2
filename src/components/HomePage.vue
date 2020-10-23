@@ -7,22 +7,14 @@
         min-height="200"
         :src="require('@/assets/name-logo.svg')"
       />
-      <Ribbon />
-      <DownButton v-if="!isMobile" />
     </v-col>
   </v-row>
 </template>
 
 <script>
-import Ribbon from "@/components/Ribbon";
-import DownButton from "@/components/DownButton";
-
 export default {
   name: "HomePage",
-  components: {
-    Ribbon,
-    DownButton
-  },
+  components: {},
 
   data: () => ({
     isMobile: false

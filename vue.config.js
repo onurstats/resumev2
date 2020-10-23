@@ -1,6 +1,6 @@
 module.exports = {
   transpileDependencies: ["vuetify"],
-  publicPath: process.env.NODE_ENV === "production" ? "/resumev2/" : "/",
+
   pwa: {
     name: "Onur Yanar Personal Site",
     themeColor: "#212121",

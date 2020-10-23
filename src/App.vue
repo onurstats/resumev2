@@ -241,6 +241,13 @@ export default {
   }
 }
 
+html,
+body {
+  background-color: #212121;
+  width: 100vw;
+  overflow: hidden;
+}
+
 .v-main {
   background-color: #212121;
   height: calc(100vh - 64px);

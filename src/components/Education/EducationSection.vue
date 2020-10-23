@@ -21,7 +21,9 @@
         </v-row>
         <v-row justify="center">
           <ul style="list-style-type:none" class="ma-2">
-            <li class="title ma-2">{{ part.school }}</li>
+            <li class="title ma-2">
+              <b>{{ part.school }}</b>
+            </li>
             <li class="ma-2">{{ part.faculty }}</li>
             <li class="ma-2">{{ part.time }}</li>
             <li class="ma-2">{{ part.gpa }}</li>

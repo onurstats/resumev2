@@ -13,9 +13,9 @@
           <v-img
             contain
             max-width="600"
-            min-width="360"
             height="64"
-            :src="require('@/assets/name-logo-black.svg')"
+            :src="require('@/assets/name-logo-outline.svg')"
+            class="px-4"
           />
           <v-spacer class="hidden-sm-and-down" />
           <v-toolbar-items class="hidden-sm-and-down">

@@ -2,16 +2,17 @@
   <v-app>
     <v-main class="fill-height" id="line-anim">
       <v-row
-        align="center"
+        align="start"
         justify="center"
         style="height: calc(100vh - 64px);"
         no-gutters
       >
-        <v-col md="10">
+        <v-col cols="10">
           <v-window v-model="page" vertical>
             <v-window-item>
               <HomePage />
             </v-window-item>
+          </v-window>
         </v-col>
       </v-row>
     </v-main>
@@ -29,7 +30,7 @@ export default {
   },
 
   data: () => ({
-    page:0
+    page: null
   }),
   mounted: function() {
     let scene, camera, renderer, ribbon;

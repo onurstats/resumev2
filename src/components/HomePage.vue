@@ -1,11 +1,17 @@
 <template>
-  <v-row tag="section" id="home" class="text-center" justify="center">
+  <v-row
+    tag="section"
+    id="home"
+    class="text-center"
+    justify="center"
+    align="start"
+  >
     <v-col class="ma-4" cols="12">
       <v-img
         contain
-        class="hidden-sm-and-down"
         min-height="200"
-        :src="require('@/assets/name-logo.svg')"
+        :src="require('@/assets/name-logo-outline-black.svg')"
+        style="margin-top:20vh"
       />
     </v-col>
   </v-row>

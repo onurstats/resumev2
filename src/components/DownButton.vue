@@ -84,7 +84,7 @@ export default {
   data: () => ({}),
   methods: {
     changetab() {
-      this.$store.commit("settab", "tab-about");
+      this.$store.commit("setpageIndex", 1);
     }
   }
 };

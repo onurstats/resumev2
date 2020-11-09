@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg8"
+   x="0px"
+   y="0px"
+   viewBox="0 0 2560 1080"
+   xml:space="preserve"
+   sodipodi:docname="name-logo-outline-wallpaper.svg"
+   width="2560"
+   height="1080"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"><metadata
+   id="metadata34"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs32" /><sodipodi:namedview
+   pagecolor="#212121"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="2560"
+   inkscape:window-height="1017"
+   id="namedview30"
+   showgrid="false"
+   inkscape:zoom="0.5"
+   inkscape:cx="1412.8752"
+   inkscape:cy="291.05194"
+   inkscape:window-x="1358"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg8" />
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#BC002D;fill-opacity:0.9412;stroke:#BC002D;stroke-width:0.761;stroke-miterlimit:15.1181;}
+	.st1{fill-opacity:0;stroke:#BC002D;stroke-width:3;stroke-miterlimit:10;}
+	.st2{fill:#BC002D;stroke:#BC002D;stroke-width:0.761;stroke-miterlimit:15.1181;}
+	.st3{fill:#BC002D;fill-opacity:0.992;stroke:#BC002D;stroke-width:0.761;stroke-miterlimit:15.1185;}
+	.st4{enable-background:new    ;}
+</style>
+<g
+   id="layer1">
+	<g
+   id="g906"
+   transform="translate(-4.0712938,-42.168268)">
+		<ellipse
+   id="path833-5"
+   class="st0"
+   cx="56.900002"
+   cy="129.60001"
+   rx="1.2"
+   ry="60.900002" />
+		<circle
+   id="path833-9"
+   class="st1"
+   cx="65.400002"
+   cy="114.6"
+   r="36.400002" />
+		<ellipse
+   id="path833-5-5-5"
+   class="st2"
+   cx="44.200001"
+   cy="129.7"
+   rx="1.2"
+   ry="61.099998" />
+		
+			<ellipse
+   id="path833-5-5-5-5"
+   transform="matrix(0.8781,-0.4785,0.4785,0.8781,-59.4776,40.5771)"
+   class="st3"
+   cx="49.900002"
+   cy="137"
+   rx="1.2"
+   ry="61.099998" />
+	</g>
+</g>
+<g
+   id="black-text"
+   class="st4">
+	<path
+   d="m 183.3,37 h 2.8 v 73 l -53,-65.2 V 109 h -2.8 V 35.9 l 53,65.1 z"
+   id="path10" />
+	<path
+   d="m 270.5,110.3 h -1 c -5.9,0 -10.9,-2 -14.9,-6.1 -4.1,-4.1 -6.1,-9.2 -6.1,-15.5 V 37 h 3.2 v 51.6 c 0,5.4 1.8,10 5.3,13.5 3.5,3.6 7.9,5.4 13.1,5.4 5.2,0 9.5,-1.8 13,-5.3 3.5,-3.6 5.2,-8.1 5.2,-13.6 V 37 h 3.2 v 51.6 c 0,6.3 -2,11.5 -6.1,15.6 -4.2,4 -9.1,6.1 -14.9,6.1 z"
+   id="path12" />
+	<path
+   d="m 353.8,37 h 4.1 c 6.2,0 11.7,2.3 16.4,6.9 4.7,4.6 7.1,10 7.1,16.1 0,6.2 -2.4,11.5 -7.2,16.1 -4.8,4.5 -10,6.8 -15.5,6.8 H 358 l 24.8,26.1 h -4.1 L 356.9,86.2 V 109 h -3.1 z m 3.1,43.1 h 1.7 c 5.2,0 9.8,-2 13.7,-6 4,-4 6,-8.7 6,-14.1 0,-5.4 -2,-10.2 -6.1,-14.2 -4.1,-4 -8.8,-6 -14,-6 H 357 v 40.3 z"
+   id="path14" />
+	<path
+   d="M 440.9,109 V 37.1 h 3.2 V 109 Z"
+   id="path16" />
+	<path
+   d="M 526.2,109 H 523 V 80.2 L 501.2,37 h 3.5 L 525,76.8 544.8,37 h 2.9 L 526.3,80.2 V 109 Z"
+   id="path18" />
+	<path
+   d="m 624.8,35.2 36,73.7 h -3.4 L 643.8,81.4 H 605.3 L 591.9,109 h -3 z m -0.3,6.7 -18,36.9 h 36.1 z"
+   id="path20" />
+	<path
+   d="m 771.9,37 h 2.8 v 73 l -53,-65.2 V 109 h -2.8 V 35.9 l 53,65.1 z"
+   id="path22" />
+	<path
+   d="m 868.7,35.2 36,73.7 h -3.4 L 887.7,81.4 H 849.2 L 835.7,109 h -3 z m -0.3,6.7 -18,36.9 h 36.1 z"
+   id="path24" />
+	<path
+   d="m 962.7,37 h 4.1 c 6.2,0 11.7,2.3 16.4,6.9 4.7,4.6 7.1,10 7.1,16.1 0,6.2 -2.4,11.5 -7.2,16.1 -4.8,4.5 -10,6.8 -15.5,6.8 H 967 l 24.8,26.1 h -4.1 L 965.9,86.2 V 109 h -3.1 V 37 Z m 3.1,43.1 h 1.7 c 5.2,0 9.8,-2 13.7,-6 4,-4 6,-8.7 6,-14.1 0,-5.4 -2,-10.2 -6.1,-14.2 -4.1,-4 -8.8,-6 -14,-6 h -1.2 v 40.3 z"
+   id="path26" />
+</g>
+</svg>
